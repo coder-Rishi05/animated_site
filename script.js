@@ -1,7 +1,4 @@
-// var tl = gsap.timeline()
 
-// tl
-// gsap.registerPlugin(scrub)
 
 const text = document.querySelector(".text");
 
