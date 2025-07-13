@@ -1,13 +1,8 @@
-
-
 const text = document.querySelector(".text");
-
 const lefImagetDiv = document.querySelectorAll(".image-container img");
-
 const rightText = document.querySelectorAll(" .text-container");
 
 const midText = document.querySelector(".text2 ");
-// const topText =document.querySelector(".text2 ");
 const about = document.querySelector(" .about");
 const leftImg = document.querySelector(" .scroll-down");
 
@@ -15,7 +10,6 @@ gsap.to(text, {
   delay: 0.4,
   duration: 0.2,
   opacity: 1,
-  // y:-100,
   ease: Power2.Expo,
 });
 
@@ -23,7 +17,6 @@ gsap.from(".left-img", {
   opacity: 0,
   y: 50,
   delay: 0.5,
-  // stagger: 0.2,
   duration: 0.4,
   ease: Power2.Expo,
 });
@@ -46,12 +39,9 @@ gsap.from(".bottom", {
 gsap.from(midText, {
   opacity: 0,
   stagger: 0.4,
-  // x:-20,
-
   scrollTrigger: {
     scroller: "body",
     trigger: ".page-2",
-    // markers:true,
     start: "top 30%",
     end: "bottom 100%",
     scrub: 0.2,
@@ -59,14 +49,11 @@ gsap.from(midText, {
 });
 
 lefImagetDiv.forEach((e) => {
-  // console.log(e);
 
   gsap.from(e, {
     opacity: 0,
     y: 50,
-    // delay: .3,
     duration: 0.7,
-    // stagger: 5,
     ease: Power2.Expo,
     scrollTrigger: {
       scroller: "body",
